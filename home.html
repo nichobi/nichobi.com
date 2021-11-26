@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>nichobi's home</title>
+  <title>home of nichobi - Nicholas Boyd Isacsson</title>
   <meta charset="utf-8"/>
   <meta name='description' content="Nicholas Boyd Isacsson's homepage, hub and project list, including programming, ASCII art and Linux stuff.">
   <meta name="viewport" content="width=600">
@@ -40,15 +40,19 @@
       color: #0042b6
     }
     h1 {
-      margin-top: 0;
-      margin-bottom: 0;
+      margin-left: 20ch; /* Same as the width of the sidebar */
+      position: fixed;
+    }
+    h2 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
       scroll-margin-top: 9rem; /* Scroll past banner when scrolling to header */
     }
     img {
       max-width: 100%;
       height: auto;
     }
-    div {
+    ascii { /* ascii blocks preserve all whitespace */
       white-space: pre;
     }
     .sidenav {
@@ -80,7 +84,6 @@
     .main {
       margin-top: 9em;
       margin-left: 22ch; /* Same as the width of the sidebar */
-      white-space: pre-wrap;
     }
     * {
       /* Disable scrollbar, Firefox doesn't support thin or transparent scrollbars */
@@ -99,15 +102,15 @@
   </style>
 </head>
 <body>
-<div class="sidenav"><span aria-hidden="true">        ___
+  <div class="sidenav">
+    <ascii><span aria-hidden="true">        ___
      .´/\_/\`.
     . : 0.0 : .
     . `:   :´ .
      . :; ;: ,
-      ` --- ´</span>
-   Nicholas Boyd
-     Isacsson
-<span aria-hidden="true">____________________</span>
+      ` --- ´</span></ascii>
+    <center>Nicholas Boyd Isacsson</center>
+    <ascii><span aria-hidden="true">____________________</span>
  Projects
 <span aria-hidden="true">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</span>
  - <a href="#scalarr">Scalarr</a>
@@ -132,54 +135,73 @@ ____________________
 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
  - <a href="mailto:nicholas@isacsson.se">Email</a>
  - <a href="https://discordapp.com/users/193433722756923394">Discord</a>
-</div>
-<div class="vdivider" aria-hidden="true">|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|
-</div>
-<div class="banner" aria-hidden="true">
+</ascii>
+  </div>
+  <div class="vdivider" aria-hidden="true">|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|
+  </div>
+  <div class="banner" aria-hidden="true"><ascii>
                 .            .                   .
                 :            :       :           :
   :.··. ·  .··· :.·.   .··.  :.·.  ·   .···.     :.·.   .··.  :.··..··.  .··.
   :   : : :     :   : :    : :   : :   ·...      :   : :    : :   :   : :....:
   :   : :  ·... :   :  ·..·  :..·  :   ·...·     :   :  ·..·  :   :   :  ·...
-__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
-</div>
-<div class="main">
-<h1 id="hello">Hello!</h1>
-I'm Nicholas Boyd Isacsson, also known as nichobi, and this is my webpage to serve as a hub for all my projects and various other interests. Since 2016 I've had a keen interest in functional programming, first awakened by Scala and lately also in Haskell. Most of my projects tend to be terminal-based utilities for my Linux server, and usually based around some concept I want to improve my skills at.
-  Look below for quick overviews on some of my projects, and follow the links to github for further details.
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</ascii>
+  </div>
+  <h1>Home of nichobi - Nicholas Boyd Isacsson</h1>
+  <div class="main">
+    <h2 id="hello">
+      Hello!
+    </h2>
+    I'm Nicholas Boyd Isacsson, also known as nichobi, and this is my webpage to serve as a hub for all my projects and various other interests. Since 2016 I've had a keen interest in functional programming, first awakened by Scala and lately also in Haskell. Most of my projects tend to be terminal-based utilities for my Linux server, and usually based around some concept I want to improve my skills at.<br>&nbsp;
+    Look below for quick overviews on some of my projects, and follow the links to github for further details.
 
-<h1 id="scalarr">Scalarr [<a href="https://github.com/nichobi/scalarr">git</a>]</h1><img src="https://raw.githubusercontent.com/nichobi/scalarr/master/scalarr.gif" alt="Short demo of Scalarr functionality" width="662" height="396">
-Scalarr is a command line tool for communicating with <a href="https://sonarr.tv/">Sonarr</a>, written in Scala.
-  I initially developed it to get the hang of REST APIs and IO monads, for which I made heavy use of <a href="https://zio.dev/">ZIO</a>.
+    <h2 id="scalarr">
+      Scalarr [<a href="https://github.com/nichobi/scalarr">git</a>]
+    </h2>
+    <img src="https://raw.githubusercontent.com/nichobi/scalarr/master/scalarr.gif" alt="Short demo of Scalarr functionality" width="662" height="396">
+    Scalarr is a command line tool for communicating with <a href="https://sonarr.tv/">Sonarr</a>, written in Scala.<br>&nbsp;
+    I initially developed it to get the hang of REST APIs and IO monads, for which I made heavy use of <a href="https://zio.dev/">ZIO</a>.
 
-<h1 id="sponsorblockcast">Sponsorblockcast [<a href="https://github.com/nichobi/sponsorblockcast">git</a>]</h1>
-A POSIX shell script that monitors all Chromecasts on the local network and automatically skips past any sponsored or otherwise unwanted segments of Youtube videos, using the <a href="https://github.com/ajayyy/SponsorBlock">SponsorBlock</a> API. It was inspired by <a href="https://github.com/stephen304/castblock">CastBlock</a> but rewritten from scratch to avoid some of its pitfalls, allowing for much greater performance and poll rates as well as extra features and configuration.
+    <h2 id="sponsorblockcast">
+      Sponsorblockcast [<a href="https://github.com/nichobi/sponsorblockcast">git</a>]
+    </h2>
+    A POSIX shell script that monitors all Chromecasts on the local network and automatically skips past any sponsored or otherwise unwanted segments of Youtube videos, using the <a href="https://github.com/ajayyy/SponsorBlock">SponsorBlock</a> API.<br>&nbsp;
+    It was inspired by <a href="https://github.com/stephen304/castblock">CastBlock</a> but rewritten from scratch to avoid some of its pitfalls, allowing for much greater performance and poll rates as well as extra features and configuration.
 
-<h1 id="ascii-art">ASCII Art [<a href="https://github.com/nichobi/ascii">git</a>]</h1><span aria-hidden=true>
-      .   .
-     /{   }\          stag beetle
-    | \, ,/ |
- ,,  \ '-' /  ,,
-  \  [_   _]  /         m-,{_},-m
-   \_/ ‾‾‾ \_/        ,,  (   )  ,,
-    _\_____/_          \_/‾---‾\_/
-   / |  |  | \          _|-----|_
-  /  |  |  |  \        / |  |  | \
- ´` |\  |  /| ´`      ´`|\  |  /|´`
-    | '---' |           " '---' "
-    "       "
-        ♂                   ♀
-</span>
-I dabble in ascii art, see my <a href="https://ascii.nichobi.com">ascii site</a> for my full, ever expanding page of drawings or check out the <a href="https://github.com/nichobi/ascii">Github repo</a> to see more details about the website.
+    <h2 id="ascii-art">
+      ASCII Art [<a href="https://github.com/nichobi/ascii">git</a>]
+    </h2>
+    <ascii aria-hidden=true>
+       .   .
+      /{   }\          stag beetle
+     | \, ,/ |
+  ,,  \ '-' /  ,,
+   \  [_   _]  /         m-,{_},-m
+    \_/ ‾‾‾ \_/        ,,  (   )  ,,
+     _\_____/_          \_/‾---‾\_/
+    / |  |  | \          _|-----|_
+   /  |  |  |  \        / |  |  | \
+  ´` |\  |  /| ´`      ´`|\  |  /|´`
+     | '---' |           " '---' "
+     "       "
+         ♂                   ♀ </ascii><br><br>
 
-<h1 id="boxboy">Boxboy [<a href="https://github.com/nichobi/boxboy">git</a>]</h1>
-I'm in the early stages of making a minimal terminal clone of the Nintendo puzzle game <a href="https://en.wikipedia.org/wiki/BoxBoy!">BoxBoy!</a>, written in Haskell. Things are pretty rudemenatary so far, but I intend to implemement all the main features of the game.
+    I dabble in ascii art, see my <a href="https://ascii.nichobi.com">ascii site</a> for my full, ever expanding page of drawings or check out the <a href="https://github.com/nichobi/ascii">Github repo</a> to see more details about the website.
 
-<h1 id="dotfiles">Dotfiles [<a href="https://github.com/nichobi/dotfiles">git</a>]</h1>
-My dotfiles repo contains all my configuration files for my development environment (based on neovim), Arch Linux setup (sway, zsh &amp; more), qutebrowser and many other programs.
+    <h2 id="boxboy">
+      Boxboy [<a href="https://github.com/nichobi/boxboy">git</a>]
+    </h2>
+    I'm in the early stages of making a minimal terminal clone of the Nintendo puzzle game <a href="https://en.wikipedia.org/wiki/BoxBoy!">BoxBoy!</a>, written in Haskell. Things are pretty rudemenatary so far, but I intend to implemement all the main features of the game.
 
-<h1 id="website">This website [<a href="https://github.com/nichobi/website">git</a>]</h1>
-I made this website in an attempt to combine the style of an ascii-art webpage with some more modern features of CSS to create a website that could be rendered in a terminal, yet doesn't feel antiquated. It's pretty barebones, as I believe there's little reason to overcomplicate a website like this with JavaScript or flashy animations.
-</div>
+    <h2 id="dotfiles">
+      Dotfiles [<a href="https://github.com/nichobi/dotfiles">git</a>]
+    </h2>
+    My dotfiles repo contains all my configuration files for my development environment (based on neovim), Arch Linux setup (sway, zsh &amp; more), qutebrowser and many other programs.
+
+    <h2 id="website">
+      This website [<a href="https://github.com/nichobi/website">git</a>]
+    </h2>
+    I made this website in an attempt to combine the style of an ascii-art webpage with some more modern features of CSS to create a website that could be rendered in a terminal, yet doesn't feel antiquated. It's intentionally barebones, as I believe there's little reason to overcomplicate a website like this with JavaScript or flashy animations.
+  </div>
 </body>
 </html>
