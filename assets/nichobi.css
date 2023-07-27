@@ -70,6 +70,7 @@ ascii { /* ascii blocks preserve all whitespace */
   margin-top: 10em;
   margin-left: 22ch; /* Same as the width of the sidebar */
   margin-right: 1ch;
+  margin-bottom: 10em;
 }
 * {
   /* Disable scrollbar, Firefox doesn't support thin or transparent scrollbars */
@@ -101,7 +102,9 @@ details[open] open {
 }
 ul {
   list-style-type: '- ';
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 1ch;
   padding-left: 3ch;
 }
 
