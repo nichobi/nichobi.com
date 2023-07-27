@@ -20,7 +20,7 @@ The neat thing about this is that it's now much easier for me to create new page
 ## The Future
 I have a few ideas of things I could write about on here, I can't promise I'll post with any regularity at all. There's at least on post that should be coming up shortly (the overlong Mastodon post that lead to the blog's creation), but after that who knows?
 
-I also have some more technical stuff to work out, like RSS feeds and an automated index page (at time of writing there isn't an index page whatsoever, but hopefully there'll be a handmade one by the time you read this).
+I also have some more technical stuff to work out, like RSS feeds (**Update**: this was surprisingly easy thanks to [pandoc-rss](https://github.com/chambln/pandoc-rss), available now [here](/feed.xml)) and an automated index page (at time of writing there isn't an index page whatsoever, but hopefully there'll be a handmade one by the time you read this).
 
 I welcome any feedback, please check the sidebar for a bunch of ways to get in touch.
 
