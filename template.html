@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+$for(author-meta)$
+  <meta name="author" content="$author-meta$" />
+$endfor$
+$if(date-meta)$
+  <meta name="dcterms.date" content="$date-meta$" />
+$endif$
+$if(keywords)$
+  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
+$endif$
+$if(description-meta)$
+  <meta name="description" content="$description-meta$" />
+  <meta property="og:description" content="$description-meta$">
+$endif$
+  <meta name="viewport" content="width=600">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="$pagetitle$">
+  <meta name="twitter:image" content="https://nichobi.com/og.png">
+  <meta property="og:image" content="https://nichobi.com/og.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image" content="https://nichobi.com/ogsquare.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="1200">
+  <link rel="stylesheet" href="nichobi.css">
+$for(css)$
+  <link rel="stylesheet" href="$css$" />
+$endfor$
+$for(header-includes)$
+  $header-includes$
+$endfor$
+</head>
+<body>
+<div class="sidenav">
+<details open>
+<summary class=hamburger> <open>Minimise</open><closed>Expand</closed> links</summary>
+<div><ascii aria-label="ASCII art of a little cat in a circle">---------------------------------------------------------------------------
+        ___
+     .´/\_/\`.
+    . : 0.0 : .
+    . `:   :´ .
+     . :; ;: ,
+      ` --- ´
+   Nicholas Boyd
+     Isacsson
+     (nichobi)
+</ascii></div>
+<div>
+<div><ascii><span aria-hidden="true">---------------------------------------------------------------------------</span>
+ Site contents
+<span aria-hidden="true">---------------------------------------------------------------------------</span>
+</ascii>
+<ul class="dash">
+  <li><a href="https://nichobi.com">Home</a></li>
+  <li><a href="https://ascii.nichobi.com">ASCII Art</a></li>
+</ul>
+</div>
+$if(toc)$
+<ascii><span aria-hidden="true">---------------------------------------------------------------------------</span>
+ Page contents
+<span aria-hidden="true">---------------------------------------------------------------------------</span></ascii>
+<nav id="$idprefix$TOC" role="doc-toc">
+$table-of-contents$
+</nav>
+$endif$
+<div><ascii><span aria-hidden="true">---------------------------------------------------------------------------</span>
+ Find me elsewhere
+<span aria-hidden="true">---------------------------------------------------------------------------</span>
+</ascii>
+<ul class="dash">
+  <li><a href="https://matrix.to/#/@nichobi:matrix.org">Matrix</a></li>
+  <li><a href="mailto:nicholas@isacsson.se">Email</a></li>
+  <li><a href="https://social.spejset.org/@nichobi" rel="me">Mastodon</a></li>
+  <li><a href="https://github.com/nichobi">GitHub</a></li>
+  <li><a href="https://listenbrainz.org/user/nichobi">ListenBrainz</a>/&#8203;<a href="https://last.fm/user/nichobi">Last.fm</a></li>
+  <li><a href="https://bookwyrm.social/user/nichobi">Bookwyrm</a>/&#8203;<a href="https://app.thestorygraph.com/profile/nichobi">StoryGraph</a></li>
+  <li><a href="https://discordapp.com/users/193433722756923394">Discord</a></li>
+  <li><a href="https://linkedin.com/in/nichobi">LinkedIn</a></li>
+  <li><a href="https://lounge.nintendo.com/friendcode/1335-8825-1216/Cvg6NzZwcy">Nintendo Switch</a></li>
+</ul>
+</div></div></div>
+  <div class="banner"><ascii aria-label="a large ASCII art banner reading nichobi's home">
+                .            .                   .
+                :            :       :           :
+  :.··. ·  .··· :.·.   .··.  :.·.  ·   .···.     :.·.   .··.  :.··..··.  .··.
+  :   : : :     :   : :    : :   : :   ·...      :   : :    : :   :   : :....:
+  :   : :  ·... :   :  ·..·  :..·  :   ·...·     :   :  ·..·  :   :   :  ·...
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</ascii>
+  </div>
+  <div class="main">
+$for(include-before)$
+$include-before$
+$endfor$
+$if(title)$
+<header id="title-block-header">
+<h1 class="title">$title$</h1>
+$if(subtitle)$
+<p class="subtitle">$subtitle$</p>
+$endif$
+$for(author)$
+<p class="author">$author$</p>
+$endfor$
+$if(date)$
+<p class="date">$date$</p>
+$endif$
+$if(abstract)$
+<div class="abstract">
+<div class="abstract-title">$abstract-title$</div>
+$abstract$
+</div>
+$endif$
+</header>
+$endif$
+$body$
+$for(include-after)$
+$include-after$
+$endfor$
+  </div>
+  <div class="vdivider" aria-hidden="true">|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|</div>
+</body>
+</html>
