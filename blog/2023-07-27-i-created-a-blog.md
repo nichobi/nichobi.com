@@ -6,7 +6,7 @@ date: 2023-07-27
 ---
 
 ## Introduction
-I started writing a Mastodon post earlier today, and it quickly grew too large for Mastodon's post limit. Naturally, instead of simply posting it as a thread, I spent a most of my day rewriting my website to support blog posts.
+I started writing a Mastodon post earlier today, and it quickly grew too large for Mastodon's post limit. Naturally, instead of simply posting it as a thread, I spent most of my day rewriting my website to support blog posts.
 
 The world of blogging is very much new to me. I've read countless blogposts over the years, yet never felt I had enough to say to justify having one of my own. I suppose I'm putting that to the test now, so should this blog end up inactive after the second post, don't be too surprised.
 
