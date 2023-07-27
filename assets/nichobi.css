@@ -45,6 +45,10 @@ ascii { /* ascii blocks preserve all whitespace */
   left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
 }
+.hdivider {
+  overflow: hidden;
+  margin-left: -1ch;
+}
 .vdivider {
   height: 100%;
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
