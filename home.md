@@ -36,21 +36,23 @@ description: "Nicholas Boyd Isacsson's homepage, hub and project list, including
 ## ASCII Art
 \[[git](https://github.com/nichobi/ascii)\]
 
-```
-         .   .
-        /{   }\          stag beetle
-       | \, ,/ |
-    ,,  \ '-' /  ,,
-     \  [_   _]  /         m-,{_},-m
-      \_/ ‾‾‾ \_/        ,,  (   )  ,,
-       _\_____/_          \_/‾---‾\_/
-      / |  |  | \          _|-----|_
-     /  |  |  |  \        / |  |  | \
-    ´` |\  |  /| ´`      ´`|\  |  /|´`
-       | '---' |           " '---' "
-       "       "
-           ♂                   ♀
-```
+<ascii aria-label="ASCII art of male and female stag beetles">
+<pre>
+       .   .
+      /{   }\          stag beetle
+     | \, ,/ |
+  ,,  \ '-' /  ,,
+   \  [_   _]  /         m-,{_},-m
+    \_/ ‾‾‾ \_/        ,,  (   )  ,,
+     _\_____/_          \_/‾---‾\_/
+    / |  |  | \          _|-----|_
+   /  |  |  |  \        / |  |  | \
+  ´` |\  |  /| ´`      ´`|\  |  /|´`
+     | '---' |           " '---' "
+     "       "
+         ♂                   ♀
+</pre>
+</ascii>
 
   I dabble in ascii art, see my [ascii site](https://ascii.nichobi.com) for my full, ever expanding page of drawings or check out the [Github repo](https://github.com/nichobi/ascii) to see more details about the website.
 
