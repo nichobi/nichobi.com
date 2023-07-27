@@ -3,7 +3,7 @@ pagetitle:  'home of nichobi - Nicholas Boyd Isacsson'
 description: "Nicholas Boyd Isacsson's homepage, hub and project list, including programming, ASCII art and Linux stuff."
 ---
 
-## Hello! {#hello}
+## Hello!
 
   I'm Nicholas Boyd Isacsson (nichobi for short) and this is my webpage to serve as a hub for all my projects and various other interests. Since 2016 I've had a keen interest in functional programming, first awakened by Scala and lately also in Haskell. Most of my projects tend to be terminal-based utilities for my Linux server, and usually based around some concept I want to improve my skills at.
 
