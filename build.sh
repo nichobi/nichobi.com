@@ -14,5 +14,10 @@ cp -r --reflink=auto assets out
 
 build home.md
 
+mkdir out/blog/
+for post in blog/*.md; do
+  build "$post"
+done
+
 echo Build complete
 
