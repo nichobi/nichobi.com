@@ -19,5 +19,11 @@ for post in blog/*.md; do
   build "$post"
 done
 
+pandoc-rss -s -l "https://blog.nichobi.com" -f '%s' \
+  -t "nichobi's blog" -d "Blog by Nicholas Boyd Isacsson" \
+  -w "nicholas@isacsson.se (Nicholas Boyd Isacsson)" \
+  blog/20*.md \
+  > out/blog/feed.xml
+
 echo Build complete
 
