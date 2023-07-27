@@ -108,7 +108,11 @@ $for(author)$
 <p class="author">$author$</p>
 $endfor$
 $if(date)$
+$if(date-meta)$
+<p class="date" title="$date-meta$">$date$</p>
+$else$
 <p class="date">$date$</p>
+$endif$
 $endif$
 $if(abstract)$
 <div class="abstract">
