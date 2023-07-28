@@ -15,6 +15,12 @@ cp -r --reflink=auto assets out
 
 build home.md "$@" -M link="https://nichobi.com"
 
+cp ascii/ascii.head.md ascii/ascii.md
+cat ascii.txt >> ascii/ascii.md
+echo '```' >> ascii/ascii.md
+build ascii/ascii.md "$@" -M link="https://ascii.nichobi.com"
+rm ascii/ascii.md
+
 mkdir out/blog/
 build blog/index.md "$@" -M link="https://blog.nichobi.com"
 for post in blog/20*.md; do
