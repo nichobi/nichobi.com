@@ -4,21 +4,22 @@ if [ "$scriptlocation" != "$PWD" ]; then
   echo "Current directory isn't the same as the script's loctaion, exiting to avoid clobbering other files"
   exit 1
 fi
-pandoc_args="$*"
 
 build() {
   filename="${1%.*}"
-  pandoc --standalone --toc=true --template=template.html $pandoc_args "$1" -o "out/$filename.html"
+  pandoc --standalone --toc=true --template=template.html "$@" -o "out/$filename.html"
 }
 
 rm -r out/
 cp -r --reflink=auto assets out
 
-build home.md
+build home.md "$@" -M link="https://nichobi.com"
 
 mkdir out/blog/
-for post in blog/*.md; do
-  build "$post"
+build blog/index.md "$@" -M link="https://blog.nichobi.com"
+for post in blog/20*.md; do
+  postid=$(basename "${post%.*}")
+  build "$post" "$@" -M link="https://blog.nichobi.com/$postid"
 done
 
 pandoc-rss -s -l "https://blog.nichobi.com" -f '%s' \
