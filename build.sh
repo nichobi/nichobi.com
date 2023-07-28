@@ -1,7 +1,9 @@
 #!/bin/sh
-scriptlocation=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
-[ "$scriptlocation" = "$PWD" ] || (echo "Current directory isn't the same as the script's loctaion, exiting to avoid clobbering other files" && exit 1)
-
+scriptlocation=$(cd -- "$(dirname -- "$0")" && pwd)
+if [ "$scriptlocation" != "$PWD" ]; then
+  echo "Current directory isn't the same as the script's loctaion, exiting to avoid clobbering other files"
+  exit 1
+fi
 pandoc_args="$*"
 
 build() {
