@@ -2,6 +2,7 @@
 title:  "nichobi's blog"
 author:
 - Nicholas Boyd Isacsson
+link: "https://blog.nichobi.com"
 ---
 
 [Feed](/feed.xml)

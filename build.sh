@@ -13,16 +13,16 @@ build() {
 rm -r out/
 cp -r --reflink=auto assets out
 
-build home.md "$@" -M link="https://nichobi.com"
+build home.md "$@"
 
 cp ascii/ascii.head.md ascii/ascii.md
 cat ascii.txt >> ascii/ascii.md
 echo '```' >> ascii/ascii.md
-build ascii/ascii.md "$@" -M link="https://ascii.nichobi.com"
+build ascii/ascii.md "$@"
 rm ascii/ascii.md
 
 mkdir out/blog/
-build blog/index.md "$@" -M link="https://blog.nichobi.com"
+build blog/index.md "$@"
 for post in blog/20*.md; do
   postid=$(basename "${post%.*}")
   build "$post" "$@" -M link="https://blog.nichobi.com/$postid"
