@@ -4,22 +4,22 @@
   <meta charset="utf-8">
   <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
 $for(author-meta)$
-  <meta name="author" content="$author-meta$" />
+  <meta name="author" content="$author-meta$">
 $endfor$
 $if(date-meta)$
-  <meta name="dcterms.date" content="$date-meta$" />
+  <meta name="dcterms.date" content="$date-meta$">
 $endif$
 $if(keywords)$
-  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
+  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$">
 $endif$
 $if(description-meta)$
-  <meta name="description" content="$description-meta$" />
+  <meta name="description" content="$description-meta$">
   <meta property="og:description" content="$description-meta$">
 $endif$
 $if(link)$
   <link rel="canonical" href="$link$">
 $endif$
-  <meta name="viewport" content="width=600">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="$pagetitle$">
   <meta name="twitter:image" content="https://nichobi.com/og.png">
@@ -33,7 +33,7 @@ $endif$
   <meta property="og:image:height" content="1200">
   <link rel="stylesheet" href="/nichobi.css">
 $for(css)$
-  <link rel="stylesheet" href="$css$" />
+  <link rel="stylesheet" href="$css$">
 $endfor$
 $for(header-includes)$
   $header-includes$
@@ -42,8 +42,8 @@ $endfor$
 <body>
 <div class="sidenav">
 <details open>
-<summary class=hamburger> <open>Minimise</open><closed>Expand</closed> links</summary>
-<div><ascii aria-label="ASCII art of a little cat in a circle">---------------------------------------------------------------------------
+<summary class=hamburger> <span class="open">Minimise</span><span class="closed">Expand</span> links</summary>
+<pre aria-label="ASCII art of a little cat in a circle">---------------------------------------------------------------------------
         ___
      .´/\_/\`.
     . : 0.0 : .
@@ -53,30 +53,28 @@ $endfor$
    Nicholas Boyd
      Isacsson
      (nichobi)
-</ascii></div>
-<div>
-<div><ascii><span aria-hidden="true">---------------------------------------------------------------------------</span>
+</pre>
+<pre><span aria-hidden="true">---------------------------------------------------------------------------</span>
  Site contents
 <span aria-hidden="true">---------------------------------------------------------------------------</span>
-</ascii>
+</pre>
 <ul class="dash">
   <li><a href="https://nichobi.com">Home</a></li>
   <li><a href="https://ascii.nichobi.com">ASCII Art</a></li>
   <li><a href="https://blog.nichobi.com">Blog</a></li>
 </ul>
-</div>
 $if(toc)$
-<ascii><span aria-hidden="true">---------------------------------------------------------------------------</span>
+<pre><span aria-hidden="true">---------------------------------------------------------------------------</span>
  Page contents
-<span aria-hidden="true">---------------------------------------------------------------------------</span></ascii>
+<span aria-hidden="true">---------------------------------------------------------------------------</span></pre>
 <nav id="$idprefix$TOC" role="doc-toc">
 $table-of-contents$
 </nav>
 $endif$
-<div><ascii><span aria-hidden="true">---------------------------------------------------------------------------</span>
+<pre><span aria-hidden="true">---------------------------------------------------------------------------</span>
  Find me elsewhere
 <span aria-hidden="true">---------------------------------------------------------------------------</span>
-</ascii>
+</pre>
 <ul class="dash">
   <li><a href="https://matrix.to/#/@nichobi:matrix.org">Matrix</a></li>
   <li><a href="mailto:nicholas@isacsson.se">Email</a></li>
@@ -88,8 +86,10 @@ $endif$
   <li><a href="https://linkedin.com/in/nichobi">LinkedIn</a></li>
   <li><a href="https://lounge.nintendo.com/friendcode/1335-8825-1216/Cvg6NzZwcy">Nintendo Switch</a></li>
 </ul>
-</div></div></div>
-  <div class="banner"><ascii aria-label="a large ASCII art banner reading nichobi's home">
+</details>
+<pre><span aria-hidden="true">---------------------------------------------------------------------------</span></pre>
+</div>
+  <div class="banner"><pre aria-label="a large ASCII art banner reading nichobi's home">
                 .            .                   .
                 :            :       :           :
   :.··. ·  .··· :.·.   .··.  :.·.  ·   .···.     :.·.   .··.  :.··..··.  .··.

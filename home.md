@@ -45,8 +45,7 @@ link: "https://nichobi.com"
 \[[git](https://github.com/nichobi/ascii)\]
 </div>
 
-<ascii aria-label="ASCII art of male and female stag beetles">
-<pre>
+<pre role="img" aria-label="ASCII art of male and female stag beetles">
        .   .
       /{   }\          stag beetle
      | \, ,/ |
@@ -61,7 +60,6 @@ link: "https://nichobi.com"
      "       "
          ♂                   ♀
 </pre>
-</ascii>
 
   I dabble in ascii art, see my [ascii site](https://ascii.nichobi.com) for my full, ever expanding page of drawings or check out the [Github repo](https://github.com/nichobi/ascii) to see more details about the website.
 
