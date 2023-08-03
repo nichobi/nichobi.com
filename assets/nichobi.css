@@ -93,7 +93,7 @@ ascii { /* ascii blocks preserve all whitespace */
 /* Minimisable sidenav styling */
 summary.hamburger{
   margin-left: 1ch;
-  list-style-type: "☰";
+  list-style-type: "☰ ";
 }
 details[open] .closed {
   display: none;
