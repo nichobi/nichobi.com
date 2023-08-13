@@ -20,6 +20,13 @@ $if(link)$
   <link rel="canonical" href="$link$">
 $endif$
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="$pagetitle$">
+$if(ogimagedomain)$
+  <meta name="twitter:image" content="$ogimagedomain$/og.png">
+$else$
+  <meta name="twitter:image" content="https://nichobi.com/og.png">
+$endif$
   <meta property="og:title" content="$pagetitle$">
   <meta property="og:url" content="$link$">
   <meta property="og:site_name" content="nichobi.com">
