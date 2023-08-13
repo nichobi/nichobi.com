@@ -21,10 +21,13 @@ echo '```' >> ascii/ascii.md
 build ascii/ascii.md "$@"
 rm ascii/ascii.md
 
-build blog/index.md "$@"
+build blog/index.md "$@" \
+  -M ogimagedomain="https://blog.nichobi.com"
 for post in blog/20*.md; do
   postid=$(basename "${post%.*}")
-  build "$post" "$@" -M link="https://blog.nichobi.com/$postid"
+  build "$post" "$@" \
+    -M link="https://blog.nichobi.com/$postid" \
+    -M ogimagedomain="https://blog.nichobi.com"
 done
 
 pandoc-rss -s -l "https://blog.nichobi.com" -f '%s' \
