@@ -21,7 +21,6 @@ echo '```' >> ascii/ascii.md
 build ascii/ascii.md "$@"
 rm ascii/ascii.md
 
-mkdir out/blog/
 build blog/index.md "$@"
 for post in blog/20*.md; do
   postid=$(basename "${post%.*}")
