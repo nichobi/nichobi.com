@@ -70,7 +70,7 @@ ascii { /* ascii blocks preserve all whitespace */
   z-index: 1;
   top: 0;
 }
-.main {
+main {
   margin-top: 10em;
   margin-left: 22ch; /* Same as the width of the sidebar */
   margin-right: 1ch;
@@ -126,7 +126,7 @@ ul {
   .banner {
     margin-left: 0;
   }
-  .main {
+  main {
     margin-top: 0;
     margin-left: 1ch;
   }
