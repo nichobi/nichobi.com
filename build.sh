@@ -29,6 +29,7 @@ for post in blog/20*.md; do
   build "$post" "$@" \
     -M date="$date" \
     -M link="https://blog.nichobi.com/$postid" \
+    -M revisionurl="https://github.com/nichobi/website/commits/main/$post" \
     -M ogimagedomain="https://blog.nichobi.com"
 done
 

@@ -124,11 +124,16 @@ $if(subtitle)$
 <p class="subtitle">$subtitle$</p>
 $endif$
 $if(date)$
+<div class="hflex">
 $if(date-meta)$
 <p class="date" title="$date-meta$">$date$</p>
 $else$
 <p class="date">$date$</p>
 $endif$
+$if(revisionurl)$
+<a href="$revisionurl$">(Revisions)</a>
+$endif$
+</div>
 $endif$
 $if(abstract)$
 <div class="abstract">
