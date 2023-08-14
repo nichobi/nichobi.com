@@ -25,7 +25,9 @@ build blog/index.md "$@" \
   -M ogimagedomain="https://blog.nichobi.com"
 for post in blog/20*.md; do
   postid=$(basename "${post%.*}")
+  date=$(echo "$postid" | cut -c1-10)
   build "$post" "$@" \
+    -M date="$date" \
     -M link="https://blog.nichobi.com/$postid" \
     -M ogimagedomain="https://blog.nichobi.com"
 done
