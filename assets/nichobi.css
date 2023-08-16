@@ -15,10 +15,11 @@ body {
   src: url(font.otf) format('opentype');
 }
 a {
-  color: #0071ff
+  color: #0071ff;
+  overflow-wrap: break-word;
 }
 a:hover {
-  color: #0042b6
+  color: #0042b6;
 }
 h2 {
   font-size: 2em;
