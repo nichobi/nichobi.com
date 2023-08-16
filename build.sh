@@ -26,11 +26,13 @@ build blog/index.md "$@" \
 for post in blog/20*.md; do
   postid=$(basename "${post%.*}")
   date=$(echo "$postid" | cut -c1-10)
+  ./commentstohtml.sh "$postid"
   build "$post" "$@" \
     -M date="$date" \
     -M link="https://blog.nichobi.com/$postid" \
     -M revisionurl="https://github.com/nichobi/website/commits/main/$post" \
-    -M ogimagedomain="https://blog.nichobi.com"
+    -M ogimagedomain="https://blog.nichobi.com" \
+    -A blog/"$postid"-comments.html
 done
 
 pandoc-rss -s -l "https://blog.nichobi.com" -f '%s' \

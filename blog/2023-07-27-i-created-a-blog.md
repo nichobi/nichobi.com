@@ -4,6 +4,7 @@ author:
 - Nicholas Boyd Isacsson
 date-meta: 2023-07-27T19:34+02:00
 link: "https://blog.nichobi.com/2023-07-27-i-created-a-blog"
+mastodonpost: "https://social.spejset.org/\\@nichobi/110787699692371920"
 ---
 
 ## Introduction
