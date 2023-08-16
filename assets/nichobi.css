@@ -8,6 +8,7 @@ body {
   padding: 0;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  overflow-wrap: break-word;
 }
 @font-face {
   font-family: 'Source Code Pro';
@@ -30,6 +31,7 @@ h2 {
   display: flex;
   gap: 1ch;
   align-items: center;
+  flex-wrap: wrap;
 }
 img {
   max-width: 80ch;

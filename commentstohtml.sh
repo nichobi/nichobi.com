@@ -30,7 +30,7 @@ curl -s "https://$postedoninstance/api/v1/statuses/$postid/context" | jq '.desce
   fi
   postdate=$(echo "$i" | jq -r '.created_at' | cut -c1-10)
   content=$(echo "$i" | jq -r '.content')
-  account=$(echo "$account" | sed 's/@/<wbr>@/')
+  account=$(echo "$account" | sed 's/@/<wbr>@/; s/\./<wbr>./g')
 
   echo \ '
   <div class="hdivider">----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</div>
