@@ -7,11 +7,10 @@ fi
 
 build() {
   filename="${1%.*}"
-  pandoc --standalone --toc=true --template=template.html "$@" -o "out/$filename.html"
+  pandoc --standalone --toc=true --template=template.html "$@" -o "out-temp/$filename.html"
 }
 
-rm -r out/
-cp -r --reflink=auto assets out
+cp -r --reflink=auto assets out-temp/
 
 build home.md "$@"
 
@@ -39,7 +38,11 @@ pandoc-rss -s -l "https://blog.nichobi.com" -f '%s' \
   -t "nichobi's blog" -d "Blog by Nicholas Boyd Isacsson" \
   -w "nicholas@isacsson.se (Nicholas Boyd Isacsson)" \
   blog/20*.md \
-  > out/blog/feed.xml
+  > out-temp/blog/feed.xml
+
+mv out out-old
+mv out-temp out
+rm -r out-old/
 
 echo Build complete
 
