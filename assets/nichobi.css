@@ -33,6 +33,9 @@ h2 {
   align-items: center;
   flex-wrap: wrap;
 }
+address {
+  font-style: normal;
+}
 img {
   max-width: 80ch;
   width: 100%;
@@ -42,15 +45,29 @@ ascii { /* ascii blocks preserve all whitespace */
   white-space: pre;
   role: img;
 }
+pre {
+  margin: 0;
+}
 .sidenav {
   margin-top: 1em;
   height: 100%; /* Full-height */
   width: 20ch; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
+  z-index: 2; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
+}
+.sidenav ul {
+  margin-bottom: 1em;
+}
+.sidenav h2 {
+  background: black;
+  font-size: 1em;
+  margin-bottom: 0;
+  margin-left: 1ch;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
 }
 .hdivider {
   overflow: hidden;
@@ -58,9 +75,10 @@ ascii { /* ascii blocks preserve all whitespace */
   white-space: nowrap;
 }
 .vdivider {
+  background: black;
   height: 100%;
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
+  z-index: 2; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   overflow: hidden; /* Disable scroll */
@@ -83,7 +101,7 @@ ascii { /* ascii blocks preserve all whitespace */
 .indent2 {
   margin-left: 4ch;
 }
-main {
+.main {
   margin-top: 10em;
   margin-left: 22ch; /* Same as the width of the sidebar */
   margin-right: 1ch;

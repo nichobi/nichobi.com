@@ -59,7 +59,8 @@ $endfor$
 <div class="sidenav">
 <details open>
 <summary class=hamburger> <span class="open">Minimise</span><span class="closed">Expand</span> links</summary>
-<pre aria-label="ASCII art of a little cat in a circle">---------------------------------------------------------------------------
+<div class="hdivider">---------------------------------------------------------------------------</div>
+<pre aria-label="ASCII art of a little cat in a circle">
         ___
      .´/\_/\`.
     . : 0.0 : .
@@ -70,28 +71,30 @@ $endfor$
      Isacsson
      (nichobi)
 </pre>
-<pre><span aria-hidden="true">---------------------------------------------------------------------------</span>
- Site contents
-<span aria-hidden="true">---------------------------------------------------------------------------</span>
-</pre>
-<ul class="dash">
+<nav aria-labelled-by="site-nav">
+<div class="hdivider">---------------------------------------------------------------------------</div>
+<h2 id="site-nav">Site contents<h2>
+<div class="hdivider">---------------------------------------------------------------------------</div>
+<ul>
   <li><a href="https://nichobi.com">Home</a></li>
   <li><a href="https://ascii.nichobi.com">ASCII Art</a></li>
   <li><a href="https://blog.nichobi.com">Blog</a></li>
 </ul>
+</nav>
 $if(toc)$
-<pre><span aria-hidden="true">---------------------------------------------------------------------------</span>
- Page contents
-<span aria-hidden="true">---------------------------------------------------------------------------</span></pre>
-<nav id="$idprefix$TOC" role="doc-toc">
+<nav aria-labelled-by="toc-nav">
+<div class="hdivider">---------------------------------------------------------------------------</div>
+<h2 id="toc-nav">Page contents</h2>
+<div class="hdivider">---------------------------------------------------------------------------</div>
 $table-of-contents$
 </nav>
 $endif$
-<pre><span aria-hidden="true">---------------------------------------------------------------------------</span>
- Find me elsewhere
-<span aria-hidden="true">---------------------------------------------------------------------------</span>
-</pre>
-<ul class="dash">
+<div>
+<div class="hdivider">---------------------------------------------------------------------------</div>
+<h2 id="find-me-elsewhere">Find me elsewhere</h2>
+<div class="hdivider">---------------------------------------------------------------------------</div>
+<address>
+<ul>
   <li><a href="https://matrix.to/#/@nichobi:matrix.org">Matrix</a></li>
   <li><a href="mailto:nicholas@isacsson.se">Email</a></li>
   <li><a href="https://social.spejset.org/@nichobi" rel="me">Mastodon</a></li>
@@ -102,6 +105,8 @@ $endif$
   <li><a href="https://linkedin.com/in/nichobi">LinkedIn</a></li>
   <li><a href="https://lounge.nintendo.com/friendcode/1335-8825-1216/Cvg6NzZwcy">Nintendo Switch</a></li>
 </ul>
+</address>
+</div>
 </details>
 <pre><span aria-hidden="true">---------------------------------------------------------------------------</span></pre>
 </div>
@@ -113,12 +118,14 @@ $endif$
   :   : :  ·... :   :  ·..·  :..·  :   ·...·     :   :  ·..·  :   :   :  ·...</pre>
 <div class="hdivider">----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</div>
   </div>
+<div class="main">
 <main>
 $for(include-before)$
 $include-before$
 $endfor$
 $if(title)$
   <header id="title-block-header">
+  <hgroup>
   <h1 class="title">$title$</h1>
 $if(subtitle)$
   <p class="subtitle">$subtitle$</p>
@@ -126,15 +133,16 @@ $endif$
 $if(date)$
   <div class="hflex">
 $if(date-meta)$
-  <p class="date" title="$date-meta$">$date$</p>
+  <p><time title="$date-meta$" datetime="$date-meta$">$date$</time></p>
 $else$
   <p class="date">$date$</p>
 $endif$
 $if(revisionurl)$
-  <a href="$revisionurl$">(Revisions)</a>
+  <p>(<a href="$revisionurl$">Revisions</a>)</p>
 $endif$
   </div>
 $endif$
+  </hgroup>
 $if(abstract)$
   <div class="abstract">
   <div class="abstract-title">$abstract-title$</div>
@@ -144,10 +152,11 @@ $endif$
   </header>
 $endif$
 $body$
+</main>
 $for(include-after)$
 $include-after$
 $endfor$
-</main>
+</div>
 <div class="vdivider" aria-hidden="true">|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|</div>
 </body>
 </html>

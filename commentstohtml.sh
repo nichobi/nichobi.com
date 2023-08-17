@@ -34,13 +34,13 @@ curl -s "https://$postedoninstance/api/v1/statuses/$postid/context" | jq '.desce
 
   echo \ '
   <div class="hdivider">----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</div>
-  <div class="comment indent'"$indentlevel"'">
+  <article class="comment indent'"$indentlevel"'">
     <div class="hflex">
       <div class="commentauth">'"$name"' (<a href="'"$accounturl"'">'"$account"'</a>)</div>
-      <a href="'"$url"'">'"$postdate"'</a>
+      <a href="'"$url"'"><time>'"$postdate"'</time></a>
     </div>
     '"$content"'
-  </div>' >> "$outputfile"
+  </article>' >> "$outputfile"
 done
 echo '</div>' >> "$outputfile"
 
