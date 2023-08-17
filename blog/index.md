@@ -10,7 +10,7 @@ link: "https://blog.nichobi.com"
 <pre class='hdivider' aria-hidden="true">----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</pre>
 
 ## [Social Media, Mastodon and Me](/2023-08-13-social-media-mastodon-and-me)
-2023-07-27
+2023-08-13
 
 > I've been spending a lot of time on Mastodon lately, and as much fun as I'm having, I've also been struggling to unify my enthusiasm for open, federated software with my more or less lifelong dislike of social media...
 
