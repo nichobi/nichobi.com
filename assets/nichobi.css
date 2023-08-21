@@ -53,7 +53,7 @@ pre {
   height: 100%; /* Full-height */
   width: 20ch; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 2; /* Stay on top */
+  z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
@@ -78,7 +78,7 @@ pre {
   background: black;
   height: 100%;
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 2; /* Stay on top */
+  z-index: 3; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   overflow: hidden; /* Disable scroll */
@@ -89,7 +89,7 @@ pre {
   background: black;
   position: fixed;
   margin-left: 21ch; /* Same as the width of the sidebar */
-  z-index: 1;
+  z-index: 2;
   top: 0;
 }
 .comments {
