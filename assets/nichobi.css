@@ -165,3 +165,17 @@ ul {
     display: none;
   }
 }
+
+/* Hide banner on screens with low height */
+@media screen and (max-height: 20em) {
+  .banner {
+    display: none;
+  }
+  .sidenav {
+    margin-top: 1em;
+  }
+  .main {
+    margin-top: 0;
+  }
+}
+
