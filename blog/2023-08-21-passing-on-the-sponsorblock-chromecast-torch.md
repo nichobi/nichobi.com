@@ -3,6 +3,7 @@ title:  'Passing on the SponsorBlock Chromecast torch'
 author:
 - Nicholas Boyd Isacsson
 date-meta: 2023-08-21T11:39+02:00
+mastodonpost: "https://social.spejset.org/\\@nichobi/110926964692168022"
 ---
 
 ## First generation
