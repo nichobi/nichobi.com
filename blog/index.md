@@ -9,6 +9,13 @@ link: "https://blog.nichobi.com"
 
 <pre class='hdivider' aria-hidden="true">----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</pre>
 
+## [Passing on the SponsorBlock Chromecast torch](/2023-08-21-passing-on-the-sponsorblock-chromecast-torch)
+2023-08-21
+
+> In mid-2020, stephen304 developed a simple bash script called CastBlock which leveraged the SponsorBlock API and go-chromecast library to monitor Chromecast devices on your local network, finding community flagged sponsor segments in the videos you watched, and tell the Chromecast to skip past them...
+
+[Read more](/2023-08-21-passing-on-the-sponsorblock-chromecast-torch)
+
 ## [Social Media, Mastodon and Me](/2023-08-13-social-media-mastodon-and-me)
 2023-08-13
 
