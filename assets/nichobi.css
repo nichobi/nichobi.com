@@ -48,6 +48,9 @@ ascii { /* ascii blocks preserve all whitespace */
 pre {
   margin: 0;
 }
+code {
+  font-family: 'Source Code Pro', 'source-code-pro', 'Hack', 'monospace';
+}
 .sidenav {
   margin-top: 1em;
   height: 100%; /* Full-height */
