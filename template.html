@@ -108,7 +108,7 @@ $endif$
 </address>
 </div>
 </details>
-<pre><span aria-hidden="true">---------------------------------------------------------------------------</span></pre>
+<div class="hdivider">---------------------------------------------------------------------------</div>
 </div>
   <div class="banner"><pre aria-label="a large ASCII art banner reading nichobi's home">
                 .            .                   .
@@ -133,12 +133,12 @@ $endif$
 $if(date)$
   <div class="hflex">
 $if(date-meta)$
-  <p><time title="$date-meta$" datetime="$date-meta$">$date$</time></p>
+  <time title="$date-meta$" datetime="$date-meta$">$date$</time>
 $else$
-  <p class="date">$date$</p>
+  <time>$date$</time>
 $endif$
 $if(revisionurl)$
-  <p>(<a href="$revisionurl$">Revisions</a>)</p>
+  <span>(<a href="$revisionurl$">Revisions</a>)</span>
 $endif$
   </div>
 $endif$
