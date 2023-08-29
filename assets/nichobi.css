@@ -60,6 +60,7 @@ code {
   font-family: 'Source Code Pro', 'source-code-pro', 'Hack', 'monospace';
 }
 .sidenav {
+  background: black;
   margin-top: 1em;
   height: 100%; /* Full-height */
   width: 20ch; /* Set the width of the sidebar */
@@ -73,7 +74,6 @@ code {
   margin-bottom: 1em;
 }
 .sidenav h2 {
-  background: black;
   font-size: 1em;
   margin-bottom: 0;
   margin-left: 1ch;
