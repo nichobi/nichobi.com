@@ -27,6 +27,14 @@ h2 {
   margin-bottom: 0.5em;
   scroll-margin-top: 10rem; /* Scroll past banner when scrolling to header */
 }
+p {
+  margin-bottom: 0;
+}
+/* Use indentation for paragraph separation */
+p + p {
+  text-indent: 2ch;
+  margin-top: 0;
+}
 .hflex {
   display: flex;
   gap: 1ch;
