@@ -61,7 +61,6 @@ code {
 }
 .sidenav {
   background: black;
-  margin-top: 1em;
   height: 100%; /* Full-height */
   width: 20ch; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
@@ -134,7 +133,8 @@ code {
 
 /* Minimisable sidenav styling */
 summary.hamburger{
-  margin-left: 1ch;
+  padding: 1em 1ch;
+  margin: 0;
   list-style-type: "☰ ";
 }
 details[open] .closed {
@@ -157,7 +157,7 @@ ul {
 /* Low-width layout moves sidebar to the top */
 @media screen and (max-width: 75ch) {
   .sidenav {
-    margin-top: 9em;
+    margin-top: 8em;
     height: auto;
     width: 100%;
     float: none;
