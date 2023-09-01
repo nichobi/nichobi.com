@@ -19,13 +19,15 @@ a {
   color: #0071ff;
   overflow-wrap: break-word;
 }
+* {
+  scroll-margin-top: 8rem; /* Scroll past banner when scrolling to anchor */
+}
 a:hover {
   color: #0042b6;
 }
 h2 {
   font-size: 2em;
   margin-bottom: 0.5em;
-  scroll-margin-top: 10rem; /* Scroll past banner when scrolling to header */
 }
 p {
   margin-bottom: 0;
