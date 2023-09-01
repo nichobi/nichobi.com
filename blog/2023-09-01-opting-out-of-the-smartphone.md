@@ -3,6 +3,7 @@ title:  'Opting Out of the Smartphone'
 author:
 - Nicholas Boyd Isacsson
 date-meta: 2023-09-01T16:23+02:00
+mastodonpost: "https://social.spejset.org/\\@nichobi/110990374137657640"
 ---
 
 I recently blogged about my experience of social media in [Social Media, Mastodon and Me](/2023-08-13-social-media-mastodon-and-me).

@@ -9,6 +9,14 @@ link: "https://blog.nichobi.com"
 
 <pre class='hdivider' aria-hidden="true">----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</pre>
 
+## [Opting out of the Smartphone](/2023-09-01-opting-out-of-the-smartphone)
+2023-08-21
+
+> I recently blogged about my experience of social media in Social Media, Mastodon and Me. My initial outline of that post was quite a bit wider, also discussing my thoughts on today’s digital landscape and our increasingly smartphone-dependent society, but I decided to rein it in and focus on a single topic. This post is somewhat of a sequel, expanding on those thoughts and chronicling the first steps of me giving up my smartphone (for the second time)...
+
+
+[Read more](/2023-08-21-passing-on-the-sponsorblock-chromecast-torch)
+
 ## [Passing on the SponsorBlock Chromecast torch](/2023-08-21-passing-on-the-sponsorblock-chromecast-torch)
 2023-08-21
 
