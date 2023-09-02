@@ -16,6 +16,7 @@ postid=$(echo "$mastodonpost" | grep -Po '[^/]+$')
 echo '<div class="comments">
 To leave a comment, reply to <a href="'"$mastodonpost"'">this Mastodon post</a> using your fediverse client of choice and it will show up here (after some delay).' > "$outputfile"
 curl -s "https://$postedoninstance/api/v1/statuses/$postid/context" | jq '.descendants[]' -c | while read -r i; do
+  i=$(echo "$i" | tr -d '\r\n') # Remove any unescaped newlines that somehow occur
   name=$(echo "$i" | jq -r '.account.display_name')
   account=$(echo "$i" | jq -r '.account.acct')
   accounturl=$(echo "$i" | jq -r '.account.url')
