@@ -9,6 +9,12 @@ body {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   overflow-wrap: break-word;
+  display: grid;
+  grid-template-areas:
+    'sidenav vdivider banner'
+    'sidenav vdivider main';
+  overflow: hidden;
+  height: 100vh;
 }
 @font-face {
   font-family: 'Source Code Pro';
@@ -18,9 +24,6 @@ body {
 a {
   color: #0071ff;
   overflow-wrap: break-word;
-}
-* {
-  scroll-margin-top: 8rem; /* Scroll past banner when scrolling to anchor */
 }
 a:hover {
   color: #0042b6;
@@ -63,23 +66,17 @@ code {
 }
 .sidenav {
   background: black;
-  height: 100%; /* Full-height */
-  width: 20ch; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  overflow-x: hidden; /* Disable horizontal scroll */
+  width: 20ch;
+  z-index: 1;
+  overflow-y: scroll;
+  grid-area: sidenav;
 }
 .sidenav ul {
   margin-bottom: 1em;
 }
 .sidenav h2 {
   font-size: 1em;
-  margin-bottom: 0;
-  margin-left: 1ch;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
+  margin: 0 1ch;
 }
 .hdivider {
   overflow: hidden;
@@ -88,21 +85,15 @@ code {
 }
 .vdivider {
   background: black;
-  height: 100%;
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 3; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
   overflow: hidden; /* Disable scroll */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  margin-left: 20ch; /* Same as the width of the sidebar */
+  grid-area: vdivider;
 }
 .banner {
   background: black;
-  position: fixed;
-  margin-left: 21ch; /* Same as the width of the sidebar */
   z-index: 2;
-  top: 0;
+  grid-area: banner;
+  overflow-x: hidden
 }
 .comments {
   margin-top: 5em;
@@ -114,10 +105,10 @@ code {
   margin-left: 4ch;
 }
 .main {
-  margin-top: 10em;
-  margin-left: 22ch; /* Same as the width of the sidebar */
-  margin-right: 1ch;
-  margin-bottom: 5em;
+  margin: 0 1ch;
+  padding-bottom: 5em;
+  overflow-y: scroll;
+  grid-area: main;
 }
 * {
   /* Disable scrollbar, Firefox doesn't support thin or transparent scrollbars */
@@ -156,39 +147,21 @@ ul {
   padding-left: 3ch;
 }
 
-/* Low-width layout moves sidebar to the top */
+/* Low-width layout moves sidebar inline */
 @media screen and (max-width: 75ch) {
+  body {
+    grid-template-areas:
+      'banner'
+      'sidenav'
+      'main';
+    overflow: scroll;
+    height: 100%;
+  }
   .sidenav {
-    margin-top: 8em;
-    height: auto;
     width: 100%;
-    float: none;
-    position: relative;
-    display: inline-grid;
-    overflow-x: hidden;
-  }
-  .banner {
-    margin-left: 0;
-  }
-  .main {
-    margin-top: 0;
-    margin-left: 1ch;
   }
   .vdivider {
     display: none;
-  }
-}
-
-/* Hide banner on screens with low height */
-@media screen and (max-height: 20em) {
-  .banner {
-    display: none;
-  }
-  .sidenav {
-    margin-top: 1em;
-  }
-  .main {
-    margin-top: 0;
   }
 }
 
