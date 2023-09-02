@@ -54,10 +54,6 @@ img {
   width: 100%;
   height: auto;
 }
-ascii { /* ascii blocks preserve all whitespace */
-  white-space: pre;
-  role: img;
-}
 pre {
   margin: 0;
 }
@@ -85,7 +81,7 @@ code {
 }
 .vdivider {
   background: black;
-  z-index: 3; /* Stay on top */
+  z-index: 3;
   overflow: hidden; /* Disable scroll */
   grid-area: vdivider;
 }
