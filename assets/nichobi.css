@@ -133,7 +133,7 @@ code {
 summary.hamburger{
   padding: 1em 1ch;
   margin: 0;
-  list-style-type: "☰ ";
+  list-style-type: "≡ ";
 }
 details[open] .closed {
   display: none;
