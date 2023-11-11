@@ -21,7 +21,7 @@ link: "https://nichobi.com"
 \[[git](https://github.com/nichobi/scalarr)\]
 </div>
 
-  ![Short demo of Scalarr functionality](https://raw.githubusercontent.com/nichobi/scalarr/master/scalarr.gif)
+  ![Short demo of Scalarr functionality](scalarr.gif)
 
   Scalarr is a command line tool for communicating with [Sonarr](https://sonarr.tv/), written in Scala.
   I initially developed it to get the hang of REST APIs and IO monads, for which I made heavy use of [ZIO](https://zio.dev/).
@@ -82,7 +82,7 @@ link: "https://nichobi.com"
 \[[git](https://github.com/nichobi/wordle)\]
 </div>
 
-  ![Short demo of playing wordle](https://raw.githubusercontent.com/nichobi/wordle/master/wordle.gif)
+  ![Short demo of playing wordle](wordle.gif)
 
   During the [Wordle](https://www.powerlanguage.co.uk/wordle/) mania in early 2022, I wrote a minimal terminal clone of the popular daily word guessing game by powerlanguage.
   It uses the same daily word as the original website, so everyone gets the same word each day!
