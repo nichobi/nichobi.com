@@ -1,12 +1,11 @@
 ---
 pagetitle:  'home of nichobi - Nicholas Boyd Isacsson'
+title:  "nichobi's home"
 description: "Nicholas Boyd Isacsson's homepage, hub and project list, including programming, ASCII art and Linux stuff."
 link: "https://nichobi.com"
 ---
 
-## Hello!
-
-  I'm Nicholas Boyd Isacsson (nichobi for short) and this is my homepage.
+  Hello! I'm Nicholas Boyd Isacsson (nichobi for short) and this is my homepage.
   The site consists of three main pages:
 
   - This homepage, giving a quick overview of some of my projects. If you want further details, follow the links to github.
