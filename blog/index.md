@@ -9,6 +9,15 @@ link: "https://blog.nichobi.com"
 
 <pre class='hdivider' aria-hidden="true">----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</pre>
 
+## [Tea Calendar 2023 - Tee Kontor Kiel](/2024-01-30-tea-calendar-2023)
+2024-01-30
+
+> For a few years now I've been buying tea calendars each advent.
+At first, it was mostly the novelty of having a new (often flavoured) tea to drink each day, but as my interest in tea has developed, it has become more about expanding my horizons and trying out different kinds of tea...
+
+
+[Read more](/2023-08-21-passing-on-the-sponsorblock-chromecast-torch)
+
 ## [Opting out of the Smartphone](/2023-09-01-opting-out-of-the-smartphone)
 2023-09-01
 

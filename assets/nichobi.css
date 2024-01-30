@@ -152,6 +152,18 @@ ul {
   padding-left: 3ch;
 }
 
+.image-container {
+  display: grid;
+  max-width: 80ch;
+  grid-template-columns: 1fr 1fr;
+}
+.widetall {
+  grid-template-columns: 16fr 9fr;
+}
+.tallwide {
+  grid-template-columns: 9fr 16fr;
+}
+
 /* Low-width layout moves sidebar to the top */
 @media screen and (max-width: 75ch) {
   .sidenav {
