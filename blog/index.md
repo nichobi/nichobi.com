@@ -9,12 +9,20 @@ link: "https://blog.nichobi.com"
 
 <pre class='hdivider' aria-hidden="true">----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</pre>
 
+## [Smartphone Opt-out: A Few Months On](/2024-02-28-smartphone-optout-a-few-months-on)
+2024-02-28
+
+> It's now been several months since I posted about giving up my smartphone for a dumbphone.
+You may remember I promised an update "in a few weeks" but, while I did start it shortly thereafter, I ended up having to put it on hold to focus all my writing energy on my thesis.
+Having finished that up and graduated last month, I can finally commit to providing some insight into how things have gone, for better and for worse...
+
+[Read more](/2024-02-28-smartphone-optout-a-few-months-on)
+
 ## [Tea Calendar 2023 - Tee Kontor Kiel](/2024-01-30-tea-calendar-2023)
 2024-01-30
 
 > For a few years now I've been buying tea calendars each advent.
 At first, it was mostly the novelty of having a new (often flavoured) tea to drink each day, but as my interest in tea has developed, it has become more about expanding my horizons and trying out different kinds of tea...
-
 
 [Read more](/2023-08-21-passing-on-the-sponsorblock-chromecast-torch)
 

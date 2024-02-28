@@ -29,6 +29,9 @@ h2 {
   font-size: 2em;
   margin-bottom: 0.5em;
 }
+hr {
+  border-style: none;
+}
 p {
   margin-bottom: 0;
 }

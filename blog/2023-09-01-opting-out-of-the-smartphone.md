@@ -57,7 +57,7 @@ All in all, it's something to keep an eye on, but I'm hesitant to buy a new phon
 
 ## Drastic Measures
 
-<figure aria-label="ASCII art of a dumbphone and a digital audio player (specifically mine)">
+<figure aria-label="ASCII art of a dumbphone and a digital audio player (specifically mine)" id="devices">
 <pre role="img" style="overflow-x: auto;">
   .---------------.      __________________
 .´     ɴɪᴄʜᴏʙɪ     `.   |                  |
