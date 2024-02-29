@@ -7,7 +7,7 @@ fi
 
 build() {
   filename="${1%.*}"
-  pandoc --standalone --toc=true --template=template.html "$@" -o "out-temp/$filename.html"
+  pandoc --standalone --toc=true --template=template/template.html "$@" -o "out-temp/$filename.html"
 }
 
 cp -r --reflink=auto assets out-temp/
