@@ -40,9 +40,14 @@ pandoc-rss -s -l "https://blog.nichobi.com" -f '%s' \
   blog/20*.md \
   > out-temp/blog/feed.xml
 
-mv out out-old
-mv out-temp out
-rm -r out-old/
+if [ -d out ]; then
+  mv out out-old
+  mv out-temp out
+  git --no-pager diff --no-index out-old out
+  rm -r out-old/
+else
+  mv out-temp out
+fi
 
 echo Build complete
 
