@@ -3,6 +3,7 @@ title:  'Smartphone Opt-out: A Few Months On'
 author:
 - Nicholas Boyd Isacsson
 date-meta: 2024-02-29T00:05+01:00
+mastodonpost: "https://social.spejset.org/\\@nichobi/112013802475880551"
 ---
 
 It's now been several months since I posted about [giving up my smartphone for a dumbphone](2023-09-01-opting-out-of-the-smartphone).
