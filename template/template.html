@@ -57,8 +57,6 @@ $for(header-includes)$
 $endfor$
 </head>
 <body>
-${ sidenav() }
-${ banner() }
 <div class="main">
 <main>
 $for(include-before)$
@@ -98,6 +96,8 @@ $for(include-after)$
 $include-after$
 $endfor$
 </div>
+${ sidenav() }
+${ banner() }
 <div class="vdivider" aria-hidden="true">||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</div>
 </body>
 </html>
