@@ -13,6 +13,7 @@ build() {
 cp -r --reflink=auto assets out-temp/
 
 build home.md "$@"
+build 404.md "$@"
 
 cp ascii/ascii.head.md ascii/ascii.md
 cat ascii.txt >> ascii/ascii.md
