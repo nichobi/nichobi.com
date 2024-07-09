@@ -26,14 +26,25 @@ build blog/index.md "$@" \
 for post in blog/20*.md; do
   postid=$(basename "${post%.*}")
   date=$(echo "$postid" | cut -c1-10)
+  link="https://blog.nichobi.com/$postid"
   ./commentstohtml.sh "$postid"
   build "$post" "$@" \
     -M date="$date" \
-    -M link="https://blog.nichobi.com/$postid" \
+    -M link="$link" \
     -M revisionurl="https://github.com/nichobi/website/commits/main/$post" \
     -M ogimagedomain="https://blog.nichobi.com" \
     -A blog/"$postid"-comments.html
 done
+
+if [ -d "blog/wip" ]; then
+  mkdir -p "out-temp/blog/wip"
+  for post in blog/wip/*.md; do
+    date=$(date +%F)
+    build "$post" "$@" \
+      -M date="$date" \
+      -M ogimagedomain="https://blog.nichobi.com"
+  done
+fi
 
 pandoc-rss -s -l "https://blog.nichobi.com" -f '%s' \
   -t "nichobi's blog" -d "Blog by Nicholas Boyd Isacsson" \
