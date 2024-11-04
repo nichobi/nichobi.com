@@ -13,7 +13,7 @@ body {
 @font-face {
   font-family: 'Source Code Pro';
   font-weight: 600;
-  src: url(font.otf) format('opentype');
+  src: url('/font.otf') format('opentype');
 }
 a {
   color: #0071ff;
