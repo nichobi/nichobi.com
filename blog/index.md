@@ -9,6 +9,14 @@ link: "https://blog.nichobi.com"
 
 <pre class='hdivider' aria-hidden="true">----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</pre>
 
+## [What’ve I been up to?](/2024-11-04-whatve-i-been-up-to)
+2024-11-04
+
+> One of my goals since the very start of this blog has been to make that classic post, seen on nearly all personal blogs, where the author apologises for the recent lack of posts and promises to do better in future.
+> It seems that time has finally arrived, as more time has passed between my latest blog post and now, than between the blog's creation and that previous post.
+
+[Read more](/2024-11-04-whatve-i-been-up-to)
+
 ## [Smartphone Opt-out: A Few Months On](/2024-02-28-smartphone-optout-a-few-months-on)
 2024-02-28
 
