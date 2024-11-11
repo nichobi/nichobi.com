@@ -66,7 +66,7 @@ The view is astounding.
 Having a commute over the bridge is in many ways a blessing, and chief among them is the beautiful view.
 I've had time enough to experience it in three seasons, and every trip is a little different from the last.
 Perhaps most spectacular is when the sun is just rising over Malmö as the train reaches the bridge, and a streak of the sea ignites with reflected sunlight.
-Just the other day, both sea and land were covered in a quick layer of fog, under a cloudy sky.
+Just the other day, both sea and land were covered in a thick layer of fog, under a cloudy sky.
 Sandwiched between fog and clouds was a thin sliver of clear air, pierced only by Malmö's tallest buildings, behind which was the warm yellow of the rising sun.
 
 ---
@@ -89,5 +89,5 @@ Overall, I'm quite happy with the change.
 ---
 
 Thanks for reading!
-This post was a little less fenced than most of my previous ones, and as such has morphed hugely since I started it in summer (I don't think a single sentence made it through from that version).
+This post was a little less fenced in than most of my previous ones, and as such has morphed hugely since I started it in summer (I don't think a single sentence made it through from that version).
 I do have a lot more to say in adjacent topics, so there might be more of this coming, although this blog continues to be topic-less.
