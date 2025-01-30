@@ -108,4 +108,3 @@ Hopefully the clear distinction of it being a work device will make it easier to
 
 I'll likely write another update about how this next phase works out, but this time I won't make any promises about when.
 See you when I see you!
-
