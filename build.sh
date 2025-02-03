@@ -18,7 +18,7 @@ build 404.md "$@"
 cp ascii/ascii.head.md ascii/ascii.md
 cat ascii.txt >> ascii/ascii.md
 echo '```' >> ascii/ascii.md
-build ascii/ascii.md "$@"
+build ascii/ascii.md "$@" --css=/ascii.css
 rm ascii/ascii.md
 
 build blog/index.md "$@" \

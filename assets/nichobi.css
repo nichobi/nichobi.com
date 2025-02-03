@@ -1,164 +1,113 @@
+@font-face {
+  font-family: 'Playwrite GB S';
+  src: url('/PlaywriteGBS-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+:root {
+  --deep-green: oklch(53.25% 0.1257 135.26);
+  --beige: oklch(97.07% 0.0508 84.59);
+  --darker-beige: oklch(92.07% 0.0508 84.59);
+  --foreground: black;
+  --foreground-banner: white;
+
+  --sidenav-width: 260px;
+  --page-size: 960px;
+}
+
 body {
-  font-family: 'Source Code Pro', 'source-code-pro', 'Hack', 'monospace';
-  font-size: 16px;
-  font-weight: 600;
-  color: white;
-  background-color: black;
+  font-family: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
   margin: 0;
-  padding: 0;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   overflow-wrap: break-word;
+  color: var(--foreground);
+  background-color: var(--beige);
 }
-@font-face {
-  font-family: 'Source Code Pro';
-  font-weight: 600;
-  src: url('/font.otf') format('opentype');
-}
-a {
-  color: #0071ff;
-  overflow-wrap: break-word;
-}
+
 * {
-  scroll-margin-top: 8rem; /* Scroll past banner when scrolling to anchor */
+  box-sizing: border-box /* Sizes include padding */
 }
-a:hover {
-  color: #0042b6;
+
+.main {
+  max-width: calc(var(--page-size) - var(--sidenav-width));
+  margin: auto;
+  padding: 16px;
+  padding-left: calc(var(--sidenav-width) + 16px);
 }
-h2 {
-  font-size: 2em;
-  margin-bottom: 0.5em;
+
+.sidenav {
+  background: var(--darker-beige);
+  height: 100%;
+  width: var(--sidenav-width);
+  position: fixed;
+  top: 0;
+  padding: 16px;
+  padding-bottom: 32px;
+  z-index: 1; /* Stay on top */
+  overflow-y: scroll;
 }
-hr {
-  border-style: none;
+
+.banner{
+  background: var(--deep-green);
+  top: 0;
+  left: 0;
+  color: var(--foreground-banner);
+  max-width: 100%;
+  font-size: 48px;
+  font-family: 'Playwrite GB S', 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+  margin-left: var(--sidenav-width);
+  padding: 16px;
 }
-p {
-  margin-bottom: 0;
+
+a {
+  color: var(--deep-green);
 }
-/* Use indentation for paragraph separation */
-p + p {
-  text-indent: 2ch;
-  margin-top: 0;
+
+img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
 }
+
 .hflex {
   display: flex;
   gap: 1ch;
   align-items: center;
   flex-wrap: wrap;
 }
-address {
-  font-style: normal;
-}
-img {
-  max-width: 80ch;
-  width: 100%;
-  height: auto;
-}
-pre {
-  margin: 0;
-}
-code {
-  font-family: 'Source Code Pro', 'source-code-pro', 'Hack', 'monospace';
-}
-.sidenav {
-  background: black;
-  height: 100%; /* Full-height */
-  width: 20ch; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  overflow-x: hidden; /* Disable horizontal scroll */
-}
-.sidenav ul {
-  margin-bottom: 1em;
-}
-.sidenav h2 {
-  font-size: 1em;
-  margin-bottom: 0;
-  margin-left: 1ch;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-}
-.hdivider {
-  overflow: hidden;
-  margin-left: -1ch;
-  white-space: nowrap;
-}
-.vdivider {
-  background: black;
-  height: 100%;
-  width: 1ch;
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 3; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  overflow: hidden; /* Disable scroll */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  margin-left: 20ch; /* Same as the width of the sidebar */
-}
-.banner {
-  background: black;
-  position: fixed;
-  margin-left: 21ch; /* Same as the width of the sidebar */
-  z-index: 2;
-  top: 0;
-}
-.comments {
-  margin-top: 5em;
-}
-.indent1 {
-  margin-left: 2ch;
-}
-.indent2 {
-  margin-left: 4ch;
-}
-.main {
-  margin-top: 10em;
-  margin-left: 22ch; /* Same as the width of the sidebar */
-  margin-right: 1ch;
-  margin-bottom: 5em;
-}
-* {
-  /* Disable scrollbar, Firefox doesn't support thin or transparent scrollbars */
-  scrollbar-width: none;
-}
-::-webkit-scrollbar {
-  width: 2px;
-}
-::-webkit-scrollbar-thumb {
-  background: #90909070;
-}
-::-webkit-scrollbar-track {
-  background: #00000000;
+
+h1 {
+  font-weight: 500;
 }
 
-/* Minimisable sidenav styling */
-summary.hamburger{
-  padding: 1em 1ch;
-  margin: 0;
-  list-style-type: "≡ ";
+h2 {
+  font-weight: 400;
 }
-details[open] .closed {
-  display: none;
+
+pre.ascii {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: 400;
 }
-details .open {
-  display: none;
+
+li {
+  margin: 2px 0;
 }
-details[open] .open {
-  display: inline;
-}
-ul {
-  list-style-type: '- ';
-  margin-top: 0;
+
+/* Use indentation for paragraph separation */
+p {
   margin-bottom: 0;
-  margin-right: 1ch;
-  padding-left: 3ch;
+}
+p + p {
+  text-indent: 3ch;
+  margin-top: 0;
 }
 
 .image-container {
   display: grid;
-  max-width: 80ch;
   grid-template-columns: 1fr 1fr;
 }
 .widetall {
@@ -168,39 +117,36 @@ ul {
   grid-template-columns: 9fr 16fr;
 }
 
-/* Low-width layout moves sidebar to the top */
-@media screen and (max-width: 75ch) {
+.comments {
+  margin-top: 5em;
+}
+.comments > article {
+  border-style: none none none solid;
+  border-color: var(--darker-beige);
+  padding: 8px;
+  padding-left: 12px;
+  margin-top: 8px;
+}
+.indent1 {
+  margin-left: 2ch;
+}
+.indent2 {
+  margin-left: 4ch;
+}
+
+@media screen and (max-width: 700px) {
   .sidenav {
-    margin-top: 8em;
-    height: auto;
     width: 100%;
-    float: none;
     position: relative;
-    display: inline-grid;
-    overflow-x: hidden;
   }
   .banner {
     margin-left: 0;
   }
   .main {
     margin-top: 0;
-    margin-left: 1ch;
+    padding-left: 16px;
   }
   .vdivider {
     display: none;
   }
 }
-
-/* Hide banner on screens with low height */
-@media screen and (max-height: 20em) {
-  .banner {
-    display: none;
-  }
-  .sidenav {
-    margin-top: 1em;
-  }
-  .main {
-    margin-top: 0;
-  }
-}
-

@@ -34,7 +34,6 @@ curl -s "https://$postedoninstance/api/v1/statuses/$postid/context" | jq '.desce
   account=$(echo "$account" | sed 's/@/<wbr>@/; s/\./<wbr>./g')
 
   echo \ '
-  <div class="hdivider">----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</div>
   <article class="comment indent'"$indentlevel"'">
     <div class="hflex">
       <div class="commentauth">'"$name"' (<a href="'"$accounturl"'">'"$account"'</a>)</div>
