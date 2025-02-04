@@ -11,7 +11,6 @@
   --foreground-banner: white;
 
   --sidenav-width: 260px;
-  --page-size: 960px;
 }
 
 body {
@@ -31,7 +30,7 @@ body {
 }
 
 .main {
-  max-width: calc(var(--page-size) - var(--sidenav-width));
+  max-width: 960px;
   margin: auto;
   padding: 16px;
   padding-left: calc(var(--sidenav-width) + 16px);
