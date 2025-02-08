@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'Playwrite GB S';
   src: url('/PlaywriteGBS-Italic-VariableFont_wght.ttf') format('truetype');
+  font-style: italic;
 }
 
 :root {
@@ -11,6 +12,15 @@
   --foreground-banner: white;
 
   --sidenav-width: 260px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --deep-green: oklch(54.25% 0.1257 135.26);
+    --beige: oklch(20% 0 0);
+    --darker-beige: oklch(16% 0 0);
+    --foreground: white;
+  }
 }
 
 body {
@@ -56,6 +66,7 @@ body {
   max-width: 100%;
   font-size: 48px;
   font-family: 'Playwrite GB S', 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+  font-style: italic;
   margin-left: var(--sidenav-width);
   padding: 16px;
 }
