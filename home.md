@@ -1,6 +1,5 @@
 ---
 pagetitle:  'home of nichobi - Nicholas Boyd Isacsson'
-title:  "nichobi's home"
 description: "Nicholas Boyd Isacsson's homepage, hub and project list, including programming, ASCII art and Linux stuff."
 link: "https://nichobi.com"
 ---
