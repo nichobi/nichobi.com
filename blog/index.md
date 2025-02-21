@@ -7,11 +7,20 @@ link: "https://blog.nichobi.com"
 
 [Feed](/feed.xml)
 
+## [I've done things up a little](/2025-02-21-ive-done-things-up-a-little)
+2024-11-04
+
+> After almost 5 years of the ASCII art, terminal-like design of nichobi.com, I decided to redesign the site from scratch.
+> My main goals have been...
+
+
+[Read more](/2025-02-21-ive-done-things-up-a-little)
+
 ## [What’ve I been up to?](/2024-11-04-whatve-i-been-up-to)
 2024-11-04
 
 > One of my goals since the very start of this blog has been to make that classic post, seen on nearly all personal blogs, where the author apologises for the recent lack of posts and promises to do better in future.
-> It seems that time has finally arrived, as more time has passed between my latest blog post and now, than between the blog's creation and that previous post.
+> It seems that time has finally arrived, as more time has passed between my latest blog post and now, than between the blog's creation and that previous post...
 
 [Read more](/2024-11-04-whatve-i-been-up-to)
 
