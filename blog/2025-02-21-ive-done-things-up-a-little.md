@@ -3,7 +3,7 @@ title: I've done things up a little
 author:
 - Nicholas Boyd Isacsson
 date-meta: '2025-02-21T16:20+01:00' # date -Im
-mastodonpost: 'https://social.spejset.org/\\@nichobi/114042588627041225' # Double backslash before the @!
+mastodonpost: "https://social.spejset.org/\\@nichobi/114042588627041225" # Double backslash before the @!
 ---
 
 
