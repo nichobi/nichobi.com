@@ -7,8 +7,15 @@ link: "https://blog.nichobi.com"
 
 [Feed](/feed.xml)
 
+## [Tea Calendar 2024: Nio Teas Matcha](/2025-03-06-matcha-calendar-2024)
+2025-03-06
+
+> 2024 was my fifth year running of tea advent calendars, for most of which I’ve been trying to sample as large a variety as possible. This year, rather try a little bit of everything, I decided to narrow the scope and try a large selection in a small niche...
+
+[Read more](/2025-03-06-matcha-calendar-2024)
+
 ## [I've done things up a little](/2025-02-21-ive-done-things-up-a-little)
-2024-11-04
+2025-02-21
 
 > After almost 5 years of the ASCII art, terminal-like design of nichobi.com, I decided to redesign the site from scratch.
 > My main goals have been...
