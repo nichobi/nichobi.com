@@ -3,7 +3,7 @@ title: 'Tea Calendar 2024: Nio Teas Matcha'
 author:
 - Nicholas Boyd Isacsson
 date-meta: '2025-03-06T22:40+01:00' # date -Im
-mastodonpost: '' # 'https://social.spejset.org/\\@nichobi/123456789012345678' # Double backslash before the @!
+mastodonpost: "https://social.spejset.org/\\@nichobi/114117702525722573"
 ---
 
 <div><img src="images/advent-2024/main.jpg" alt="Montage of 24 different cups of matcha."></div>
